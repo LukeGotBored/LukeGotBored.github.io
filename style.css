@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* this is bloated, still clean as fuck tho */
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(316deg, #fc5c7d, #6a82fb);
+    background-size: 400% 400%;
+
+    -webkit-animation: background 30s ease infinite;
+    -moz-animation: background 30s ease infinite;
+    animation: background 30s ease infinite;
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.child{
+position: fixed;
+top: 50%;
+left: 50%;
+/* bring your own prefixes */
+transform: translate(-50%, -50%);
+background-color: rgb(241, 241, 241, 0.8);
+border-radius: 15px;
+padding: 7%;
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(1px);
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.subtitle{
+    font-weight: 300;
+}
+
+#pfp{
+    border-radius: 50%;
+    width: 128px;
+    box-shadow: 0px 0px 15px 1px rgba(148, 148, 148, 0.43);
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(148, 148, 148, 0.43);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(148, 148, 148, 0.43);
+    transition: 0.5s;
+}
+
+
+#pfp:hover{
+    border-radius: 35%;
+    width: 170px;
+    box-shadow: 0px 0px 30px 1px rgba(148, 148, 148, 0.43);
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(148, 148, 148, 0.43);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(148, 148, 148, 0.43);
+}
+
+
+button{
+    background-color: #EDEDF1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    width: 25vh;
+    height: 6vh;
+    font-size: 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    outline: none;
+    transition: 0.2s ease-in-out;
+    margin: 5px;
+}
+
+button:hover{
+    border: 3px solid #1f1f1f;
+    background-color: #EDEDF1
+}
+
+button:active{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.divider{
+    
+    border: 1px solid #3a3a3a
+}
+
+
+a{
+    padding: 15px;
+    font-size: 30px;
+    
+}
+
+
+#twitter{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#twitter:hover{
+    color: #1DA1F2;
+    font-size: 35px;
+}
+
+#github{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#github:hover{
+    color: #000000;
+    font-size: 35px;
+}
+
+#instagram{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#instagram:hover{
+    color: #d6249f;
+    font-size: 35px;
+}
+
+#mail{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#mail:hover{
+    color: #6a82fb;
+    font-size: 35px;
+}
+
+#egg{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#egg:hover{
+    color: darkorange;
+    font-size: 35px;
+}
+
+#discord{
+    color: #1f1f1f;
+    transition: 0.1s;
+}
+#discord:hover{
+    color: darkorange;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes background {
+    0% {
+        background-position: 2% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@-moz-keyframes background {
+    0% {
+        background-position: 2% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@keyframes background {
+    0% {
+        background-position: 2% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
+}

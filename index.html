@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <script src="https://kit.fontawesome.com/8c407857e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        // this is stupid, why am i doing this
+        var sentences = [
+            "♪┏(･o･)┛",
+            "┗(･o･)┓♪",
+            "┏(･o･)┛♪",
+            "♪┗(･o･)┓",
+            "(☞ﾟヮﾟ)☞",
+            "☜(ﾟヮﾟ☜)",
+            "☜(⌒▽⌒)☞",
+            "＼(ﾟｰﾟ＼)",
+            "( ﾉ ﾟｰﾟ)ﾉ"
+        ]
+        let i = 0;
+        let txt = sentences[Math.floor(Math.random() * sentences.length)]; 
+        txt = txt.split("")
+        
+        // what the fuck is this
+        function typeWriter() {
+            txt = sentences[Math.floor(Math.random() * sentences.length)]; 
+            document.title = "Luke's Website " + txt;
+        
+            setTimeout(typeWriter, 400);
+        }
+        typeWriter()
+    </script>
+    <article class="main">            
+        <div class="child">   
+            <table>
+                <tr><th>
+                    <img src="./pic.png" id="pfp">
+                </th></tr>
+                <tr><th>
+                    <div class="title">Luke is a <b>Developer</b></div>
+                </th></tr>
+                <tr><th>
+                    <div class="subtitle">i am as funny as crippling depression</div>
+                </th></tr>
+                <tr>
+                    <th>
+                        <br>
+                        <button>Projects</button>
+                        <button>About Me</button>
+                    </th>
+                </tr>
+                <tr><th>
+                    <br>
+                    <hr class="divider">
+                </th></tr>
+                <tr>
+                    <div id="social">
+                        <th>
+                            <a href="https://github.com/LukeGotBored"><i class="fab fa-github" id="github"></i></a>
+                           <a href="https://twitter.com/lukegotbored"><i class="fab fa-twitter" id="twitter"></i></a>
+                           <a href="https://discordapp.com/users/305771483865546752"><i class="fab fa-discord" id="discord"></i></a>
+                           <a href="https://www.instagram.com/lukedesu_/"><i class="fab fa-instagram" id="instagram"></i></a>
+                           <a href="mailto:gianluca.suriani@outlook.it"><i class="far fa-envelope" id="mail"></i></a>
+                        </th>
+                    </div>
+                </tr>
+
+            </table>             
+            
+            
+        </div>
+    </article>
+
+
+
+</body>
+</html>
