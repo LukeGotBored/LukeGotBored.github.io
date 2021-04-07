@@ -210,3 +210,18 @@ a{
         background-position: 2% 0%
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .child {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+        background-color: rgb(241, 241, 241, 0.2);
+        border-radius: 15px;
+        padding: 100%;
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+    }
+}
