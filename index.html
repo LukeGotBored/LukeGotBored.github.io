@@ -1,85 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#897AE1">
-    <title></title>
-    <script src="https://kit.fontawesome.com/8c407857e4.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<title>lkgb • Home</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.scss">
+
+	<!-- <script src="./js/piximanager.js"></script> -->
+	<script src="./js/utils.js" type="module"></script>
+	<!-- <script src="./js/libs/particles.min.js"></script> -->
+	<script src="./js/script.js"  type="module" defer></script>
+
+	
+	
+	
 </head>
+
 <body>
-    <script>
-        // this is stupid, why am i doing this
-        var sentences = [
-            "♪┏(･o･)┛",
-            "┗(･o･)┓♪",
-            "┏(･o･)┛♪",
-            "♪┗(･o･)┓",
-            "(☞ﾟヮﾟ)☞",
-            "☜(ﾟヮﾟ☜)",
-            "☜(⌒▽⌒)☞",
-            "＼(ﾟｰﾟ＼)",
-            "( ﾉ ﾟｰﾟ)ﾉ"
-        ]
-        let i = 0;
-        let txt = sentences[Math.floor(Math.random() * sentences.length)]; 
-        txt = txt.split("")
-        
-        // what the fuck is this
-        function typeWriter() {
-            txt = sentences[Math.floor(Math.random() * sentences.length)]; 
-            document.title = "Luke's Website " + txt;
-        
-            setTimeout(typeWriter, 400);
-        }
-        typeWriter()
-    </script>
-    <article class="main">            
-        <div class="child">   
-            <table>
-                <tr><th>
-                    <img src="./pic.png" id="pfp">
-                </th></tr>
-                <tr><th>
-                    <div class="title">Luke is a <b>Developer</b></div>
-                </th></tr>
-                <tr><th>
-                    <div class="subtitle">i am as funny as crippling depression</div>
-                </th></tr>
-                <tr>
-                    <th>
-                        <br>
-                        <button>Projects</button>
-                        <button>About Me</button>
-                    </th>
-                </tr>
-                <tr><th>
-                    <br>
-                    <hr class="divider">
-                </th></tr>
-                <tr>
-                    <div id="social">
-                        <th>
-                            <a href="https://github.com/LukeGotBored"><i class="fab fa-github" id="github"></i></a>
-                           <a href="https://twitter.com/lukegotbored"><i class="fab fa-twitter" id="twitter"></i></a>
-                           <a href="https://discordapp.com/users/305771483865546752"><i class="fab fa-discord" id="discord"></i></a>
-                           <a href="https://www.instagram.com/lukedesu_/"><i class="fab fa-instagram" id="instagram"></i></a>
-                           <a href="mailto:gianluca.suriani@outlook.it"><i class="far fa-envelope" id="mail"></i></a>
-                        </th>
-                    </div>
-                </tr>
-
-            </table>             
-            
-            
-        </div>
-    </article>
+	<div class="egg">
+		<img src="./assets/egg.gif" alt="egg">
+		Hello there!
+	</div>
 
 
+		<div class="navbar">
+		<a href="#intro">Home</a> 
+		<a href="#about">About</a>
+		<a href="#projects">Projects</a></a>
+		<!-- <a href="#">Spaces<span class="beta-sellout">NEW</span></a> -->
+	</div>
 
+	<div class="scrollIndicator">
+	</div>
+
+	<div class="content" id="home">
+		<img src="./assets/propic.png" id="propic" alt="Profile Picture">
+		<div class="textContent">
+			<span id="title-special">Hi!<div id="extra">&nbsp;I'm Luke.</div></span>
+			<br>
+		</div>
+		<span id="sub" title="woah! definitely not an overused random sentence thing-y">Loading stuff...</span>
+		<div class="links">
+			<!-- github -->
+			<a href="https://github.com/lukegotbored" target="_blank">
+				<i class="fab fa-github"></i>
+			</a>
+			<!-- telegram -->
+			<a href="https://t.me/lukethewuke" target="_blank">
+				<i class="fab fa-telegram-plane"></i>
+			</a>
+			<!-- discord -->
+			<a href="https://discord.com/users/305771483865546752" target="_blank">
+				<i class="fab fa-discord"></i>
+			</a>
+			<!-- steam -->
+			<a href="https://steamcommunity.com/id/definitelynotluwuke/" target="_blank">
+				<i class="fab fa-steam"></i>
+			</a>
+			<!-- twitter -->
+			<a href="https://twitter.com/lukegotbored" target="_blank">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<!-- spotify -->
+			<a href="https://open.spotify.com/user/lkgb" target="_blank">
+				<i class="fab fa-spotify"></i>
+			</a>
+			<!-- email -->
+			<a href="mailto:contact@lkgb.ml">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div>
+		
+
+		<div id="scrolldownPrompt">
+			<span>Scroll down to see more</span>
+			<i class="fas fa-chevron-down"></i>
+		</div>
+	</div>
+
+	<!-- <div class="content" id="about"> -->
+		<!-- <div class="about-content">
+			<div class="title"><div id="emoji-wave">👋</div>&nbsp;Hello, I'm Luke</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugiat praesentium sequi voluptatum enim ab nostrum ad quos quod repudiandae. Ab perspiciatis dolores officia ratione maxime dolorum harum, voluptate quia?</p>
+			</div>
+			
+		</div>
+		<div id="about-vfx">
+			<div class="meme">*pretend there's something cool in here*</div>
+		</div> -->
+		<!-- Flashbang! -->
+
+
+	<!-- </div> -->
+
+	<div class="content" id="more">
+		<div class="title">OwO?</div>
+		Still working on this! Check back later!
+	</div>
+
+
+	
 </body>
 </html>
